@@ -1,5 +1,7 @@
 package com.iasolutions.demo.Service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.iasolutions.demo.Model.comments;
@@ -14,4 +16,8 @@ public class commentsService {
     public comments guardarComentario(comments comentario) {
         return CommentsRepository.save(comentario);
     }
+
+    public List<comments> listarComentario(){
+        return CommentsRepository.findAll();
+    } 
 }

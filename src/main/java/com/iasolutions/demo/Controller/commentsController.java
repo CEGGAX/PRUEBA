@@ -1,8 +1,12 @@
 package com.iasolutions.demo.Controller;
 
+import java.util.List;
+
+import org.hibernate.annotations.Comments;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +27,12 @@ public class commentsController {
     public ResponseEntity<String> enviarComentario(@RequestBody comments comentario) {
         CommentsService.guardarComentario(comentario);
         return ResponseEntity.ok("Comentario enviado exitosamente");
+    }
+
+    @GetMapping
+    public ResponseEntity<List<comments>> mostrarComentarios() {
+        List<comments> commentsList = CommentsService.listarComentario();
+        return ResponseEntity.ok(commentsList);
     }
 
 }
