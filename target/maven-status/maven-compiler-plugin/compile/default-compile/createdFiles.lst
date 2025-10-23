@@ -1,0 +1,12 @@
+com\iasolutions\demo\Controller\commentsController.class
+com\iasolutions\demo\Model\asunto.class
+com\iasolutions\demo\DemoApplication.class
+com\iasolutions\demo\Service\commentsService.class
+com\iasolutions\demo\Repository\usuarioRepository.class
+com\iasolutions\demo\Model\comments.class
+com\iasolutions\demo\Model\rol.class
+com\iasolutions\demo\Repository\commentsRepository.class
+com\iasolutions\demo\Service\userDetallesService.class
+com\iasolutions\demo\Config\securityConfig.class
+com\iasolutions\demo\Controller\vistaController.class
+com\iasolutions\demo\Model\usuarioEntity.class
