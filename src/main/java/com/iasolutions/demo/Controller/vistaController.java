@@ -20,4 +20,9 @@ public class vistaController {
     public String adminPage() {
         return "adminPage";
     }
+
+    @GetMapping("/registrar")
+    public String registerPage() {
+        return "registro";
+    }
 }

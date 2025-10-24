@@ -33,22 +33,50 @@
 
     <!-- Contenido principal -->
     <div class="admin-container">
-      <h3><i class="fas fa-users"></i> Lista de Comentarios</h3>
+      <div class="btn-section">
+        <button id="btnComentarios" class="btn">
+          <i class="fas fa-comments"></i> Ver Comentarios
+        </button>
+        <button id="btnUsuarios" class="btn">
+          <i class="fas fa-user"></i> Ver Usuarios
+        </button>
+      </div>
 
-      <table id="tablaComentarios">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Correo Electrónico</th>
-            <th>Asunto</th>
-            <th>Mensaje</th>
-          </tr>
-        </thead>
-        <tbody>
-          
-        </tbody>
-      </table>
+      <!-- Tabla de Comentarios -->
+      <div id="seccionComentarios">
+        <h3><i class="fas fa-users"></i> Lista de Comentarios</h3>
+        <table id="tablaComentarios">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Correo Electrónico</th>
+              <th>Asunto</th>
+              <th>Mensaje</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <!-- Tabla de Usuarios -->
+      <div id="seccionUsuarios" class="hidden">
+        <h3><i class="fas fa-user-friends"></i> Lista de Usuarios</h3>
+        <table id="tablaUsuarios">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Rol</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </div>
+
     <script src="/js/listarComentarios.js"></script>
+    <script src="/js/cambiarVista.js"></script>
+    <script src="/js/listarUsuarios.js"></script>
   </body>
 </html>
