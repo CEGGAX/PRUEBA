@@ -11,6 +11,8 @@ public class DemoApplication {
 
 		System.out.println("Usuario BD: " + System.getenv("DB_USER"));
 		System.out.println("Password BD: " + System.getenv("DB_PASS"));
+		System.out.println("DB_URL: " + System.getenv("DB_URL"));
+
 
 		//PasswordEncoder encoder = new BCryptPasswordEncoder();
 		//System.out.println("Encoded password for 'admin': " + encoder.encode("admin123"));
